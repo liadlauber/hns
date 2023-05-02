@@ -190,7 +190,6 @@ func (a *SubNamespaceAnnotator) Handle(ctx context.Context, req admission.Reques
 					log.Error(err, "unable to upload log to elastic")
 				}
 			}
-		}
 		return admission.Allowed(allowMessageValidateQuotaObj)
 	}
 	return admission.Denied(contactMessage)
